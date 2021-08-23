@@ -1,0 +1,12 @@
+.section {
+    padding-top: 3.3rem;
+    padding-bottom: 8.1rem;
+    &__title {
+        font-weight: 600;
+        font-size: 2.1rem;
+        margin-bottom: 2.6rem;
+        @media (max-width: $tablet - 1) {
+            font-size: 1.7rem;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.page {
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 3.6rem;
+        padding-bottom: 1.7rem;
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 2.5rem;
+        line-height: 129.37%;
+        letter-spacing: -0.03em;
+        @media (max-width: $tablet - 1) {
+            font-size: 2rem;
+        }
+    }
+}

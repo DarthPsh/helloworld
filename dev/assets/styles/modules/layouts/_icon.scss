@@ -1,0 +1,27 @@
+.icon {
+    &__svg {
+        transition: .3s;
+    }
+    &__favorites {
+        width: 24px;
+        height: 22px;
+        fill: $light-text;
+        stroke: $light-text;
+        cursor: pointer;
+        &:hover {
+            fill: $warning-light-color;
+            stroke: $warning-light-color;
+        }
+    }
+    &__close {
+        width: 17px;
+        height: 17px;
+        fill: $light-text;
+        stroke: $light-text;
+        cursor: pointer;
+        &:hover {
+            fill: $warning-light-color;
+            stroke: $warning-light-color;
+        }
+    }
+}

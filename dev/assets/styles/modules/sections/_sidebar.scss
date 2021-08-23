@@ -1,0 +1,74 @@
+.sidebar {
+    max-width: 326px;
+    @media (max-width: $large - 1) {
+      max-width: none;
+    }
+    &__content {
+      border: 1px solid $gray-line;
+      border-radius: 3px;
+      background: $white;
+      @media (max-width: $tablet - 1) {
+        border-radius: 0;
+      }
+    }
+    &__info {
+        padding: 2.1rem 1.7rem 1.7rem;
+        border-bottom: 1px solid $gray-line;
+        &-table {
+            width: 100%;
+            font-weight: 600;
+            font-size: 1.5rem;
+            &__title {
+                span {
+                    color: $light-text;
+                }
+            }
+            &__num {
+                text-align: right;
+                &--warning {
+                    color: $warning-color;
+                }
+            }
+        }
+        &-hint {
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 1.9rem;
+            color: $main-color;
+            position: relative;
+            .icon__quest {
+                height: 17px;
+                width: 17px;
+                margin-left: 1rem;
+                fill: $light-text;
+                cursor: pointer;
+            }
+        }
+    }
+    &__total {
+        font-weight: 600;
+        font-size: 1.8rem;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2.7rem;
+        &-count {
+            font-weight: 700;
+            &__unit {
+                font-weight: 400;
+            }
+        }
+    }
+    &__footer {
+        padding: 1.7rem;
+    }
+    &__hint {
+        padding: 1.9rem 1.7rem;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+        color: $light-link;
+    }
+    &__buy {
+        width: 100%;
+    }
+}

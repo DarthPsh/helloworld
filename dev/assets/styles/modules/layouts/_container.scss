@@ -1,0 +1,14 @@
+.container {
+    padding: 0 3rem;
+    margin: 0 auto;
+    max-width: $desktop;
+    width: 100%;
+    @media (max-width: $tablet - 1) {
+        padding: 0 1.6rem;
+    }
+    &--cart {
+        @media (max-width: $tablet - 1) {
+            padding: 0;
+        }
+    }
+}

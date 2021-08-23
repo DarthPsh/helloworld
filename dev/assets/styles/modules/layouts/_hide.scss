@@ -1,0 +1,7 @@
+.hide {
+  &--tablet {
+    @media (max-width: $tablet - 1) {
+      display: none;
+    }
+  }
+}

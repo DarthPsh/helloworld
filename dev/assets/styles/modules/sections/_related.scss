@@ -1,0 +1,57 @@
+.related {
+    &__wrap {
+        flex-direction: row;
+        align-items: stretch;
+    }
+    &__prod {
+        &s {
+        }
+        padding: 1.6rem;
+        background: $white;
+        border: 1px solid $gray-line;
+        border-radius: 3px;
+        display: flex;
+        flex-direction: column;
+        max-width: 186px;
+        text-align: center;
+        height: auto;
+        @media (max-width: $tablet - 1) {
+            text-align: left;
+        }
+        &-img {
+            max-height: 152px;
+            max-width: 152px;
+            width: 152px;
+            height: 152px;
+            object-fit: contain;
+            margin-bottom: 1rem;
+            @media (max-width: $tablet - 1) {
+                max-height: 142px;
+                max-width: 142px;
+                width: 142px;
+                height: 142px;
+            }
+        }
+        &-title {
+            font-weight: 600;
+            font-size: 1.4rem;
+            flex-grow: 1;
+            margin-bottom: 0.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @media (max-width: $tablet - 1) {
+                font-size: 1.3rem;
+                justify-content: flex-start;
+            }
+        }
+        &-price {
+            font-weight: 600;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        &-buy {
+            width: 100%;
+        }
+    }
+}
